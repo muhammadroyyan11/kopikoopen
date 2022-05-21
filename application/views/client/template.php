@@ -34,6 +34,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/client/css/util.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/client/css/main.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/assets/css/share.css">
     <!--===============================================================================================-->
 </head>
 
