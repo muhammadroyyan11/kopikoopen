@@ -23,7 +23,7 @@ class User extends CI_Controller
 
     private function _validasi($mode)
     {
-        $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
+        $this->form_validation->set_rules('nama_lengkap', 'Nama', 'required|trim');
         $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
         $this->form_validation->set_rules('role', 'Role', 'required|trim');
 
@@ -55,7 +55,7 @@ class User extends CI_Controller
         } else {
             $input = $this->input->post(null, true);
             $input_data = [
-                'nama'          => $input['nama'],
+                'nama_lengkap'          => $input['nama'],
                 'username'      => $input['username'],
                 'email'         => $input['email'],
                 'no_telp'       => $input['no_telp'],
@@ -72,7 +72,7 @@ class User extends CI_Controller
 
             if ($this->base_model->insert('user', $input_data)) {
                 set_pesan('data berhasil disimpan.');
-                redirect('user');
+                redirect('admin/user');
             } else {
                 set_pesan('data gagal disimpan', false);
                 redirect('admin/user/add');
@@ -92,7 +92,7 @@ class User extends CI_Controller
         } else {
             $input = $this->input->post(null, true);
             $input_data = [
-                'nama'          => $input['nama'],
+                'nama_lengkap'          => $input['nama'],
                 'username'      => $input['username'],
                 'email'         => $input['email'],
                 'no_telp'       => $input['no_telp'],

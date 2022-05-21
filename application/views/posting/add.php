@@ -15,6 +15,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <input type="text" id="first-name" class="form-control" name="judul" placeholder="Judul Artikel">
+                                    <input type="hidden" value="<?= userdata('id_user')?>">
                                 </div>
                             </div>
                         </div>

@@ -5,6 +5,7 @@
 	</h2>
 </section>
 
+
 <!-- content page -->
 <section class="bgwhite p-t-60">
 	<div class="container">
@@ -33,7 +34,7 @@
 
 								<div class="s-text8 flex-w flex-m p-b-21">
 									<span>
-										By Admin
+										By <?= $data->nama_lengkap?>
 										<span class="m-l-3 m-r-6">|</span>
 									</span>
 

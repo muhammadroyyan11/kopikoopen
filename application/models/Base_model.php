@@ -286,6 +286,7 @@ class Base_model extends CI_Model
         // $this->db->from('posting');
         $this->db->order_by('id_posting', 'desc');
         $this->db->join('kartikel', 'kartikel.id_kartikel = posting.id_kartikel');
+        $this->db->join('user', 'user.id_user = posting.user');
         // $this->db->order_by($order, $az);
         $sql = $this->db->get($table, $number, $offset)->result();
         return $sql;

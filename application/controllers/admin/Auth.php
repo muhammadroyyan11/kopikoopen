@@ -73,7 +73,7 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]|alpha_numeric');
         $this->form_validation->set_rules('password', 'Password', 'required|min_length[3]|trim');
         $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'matches[password]|trim');
-        $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
+        $this->form_validation->set_rules('nama_lengkap', 'Nama', 'required|trim');
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]');
         $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
 

@@ -54,6 +54,7 @@ class Shop extends CI_Controller {
 		$data['barang'] = $this->base->data('barang',$config['per_page'],$from);
 
 		$data['kproduk'] = $this->base_model->get('kproduk')->result();
+		$data['title'] = 'Shop';
 		$this->template->load('client/template', 'client/shop/shop', $data);
 	}
 

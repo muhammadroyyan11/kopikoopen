@@ -31,7 +31,8 @@ class Contact extends CI_Controller
 	 
 	public function index()
 	{
-		$this->template->load('client/template', 'client/contact/contact');
+		$data['title'] = 'Kontak kami';
+		$this->template->load('client/template', 'client/contact/contact', $data);
 	}
 
 	public function send_message()

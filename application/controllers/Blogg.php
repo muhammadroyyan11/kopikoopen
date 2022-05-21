@@ -66,6 +66,7 @@ class Blogg extends CI_Controller {
 
 		$data['blog'] = $this->base->get_join('posting',$config['per_page'],$from);
 
+		
 		$this->template->load('client/template', 'client/blog/blogg', $data);
 	}
 

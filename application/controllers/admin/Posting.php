@@ -55,6 +55,7 @@ class Posting extends CI_Controller
             $konten = $this->input->post('konten');
             $featured = $this->input->post('featured');
             $id_kartikel = $this->input->post('kategori');
+            $id_user = userdata('id_user');
             $isActive = 1;
             $date = date('Y-m-d');
 
@@ -71,6 +72,7 @@ class Posting extends CI_Controller
                 'gambar_name' => $gambar,
                 'id_kartikel' => $id_kartikel,
                 'isActive' => $isActive,
+                'user' => $id_user,
                 'date' => $date
             );
             // var_dump($data);
@@ -82,6 +84,7 @@ class Posting extends CI_Controller
             $seo = slugify($this->input->post('judul'));
             $konten = $this->input->post('konten');
             $featured = $this->input->post('featured');
+            $id_user = userdata('id_user');
             $id_kartikel = $this->input->post('kategori');
             $isActive = 1;
             $date = date('Y-m-d');
@@ -95,6 +98,7 @@ class Posting extends CI_Controller
                 'gambar_name' => $gambar,
                 'id_kartikel' => $id_kartikel,
                 'isActive' => $isActive,
+                'user' => $id_user,
                 'date' => $date
 
             );

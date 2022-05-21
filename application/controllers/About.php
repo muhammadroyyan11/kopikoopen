@@ -31,6 +31,7 @@ class About extends CI_Controller {
 	
 	public function index()
 	{
-		$this->template->load('client/template', 'client/about/about');
+		$data['title'] = 'Tentang Kami';
+		$this->template->load('client/template', 'client/about/about', $data);
 	}
 }
