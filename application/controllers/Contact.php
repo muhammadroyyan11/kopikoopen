@@ -32,6 +32,7 @@ class Contact extends CI_Controller
 	public function index()
 	{
 		$data['title'] = 'Kontak kami';
+		
 		$this->template->load('client/template', 'client/contact/contact', $data);
 	}
 

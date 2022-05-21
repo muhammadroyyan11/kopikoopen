@@ -67,6 +67,7 @@ class Blog extends CI_Controller
 		$data['kartikel'] = $this->base_model->get('kartikel')->result();
 
 		$data['blog'] = $this->base->get_join('posting',$config['per_page'],$from);
+		
 		$data['title'] = 'Artikel kopi koopen';
 
 		$this->template->load('client/template', 'client/blog/blog', $data);
