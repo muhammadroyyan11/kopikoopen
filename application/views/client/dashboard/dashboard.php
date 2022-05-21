@@ -57,7 +57,7 @@
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
-					Shop
+					Featured Product
 				</h3>>
 			</div>
 
@@ -198,7 +198,7 @@
 		<div class="container">
 			<div class="sec-title p-b-52">
 				<h3 class="m-text5 t-center">
-					Our Blog
+					Our New Blog
 				</h3>
 			</div>
 
