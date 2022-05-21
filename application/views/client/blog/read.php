@@ -44,8 +44,8 @@
 								<p class="p-b-25">
 									Aliquam faucibus scelerisque placerat. Vestibulum vel libero eu nulla varius pretium eget eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean dictum faucibus felis, ac vestibulum risus mollis in. Phasellus neque dolor, euismod vitae auctor eget, dignissim a felis. Etiam malesuada elit a nibh aliquam, placerat ultricies nibh dictum. Nam ut egestas velit. Pellentesque viverra tincidunt tellus. Etiam cursus, ligula id vehicula cursus, turpis mauris facilisis massa, eget tincidunt est purus et odio. Nam quis luctus libero, non posuere velit. Ut eu varius diam, eu euismod elit. Donec efficitur, neque eu consectetur consectetur, dui sem consectetur felis, vitae rutrum risus urna vel arcu. Aliquam semper ullamcorper laoreet. Sed arcu lectus, fermentum imperdiet purus eu, ornare ornare libero.
 								</p> -->
-								<p align="justify"> <?= $posting->konten ?> </p>
-                            
+                            <p align="justify"> <?= $posting->konten ?> </p>
+
                         </div>
 
 
@@ -62,55 +62,23 @@
                     </h4>
 
                     <ul class="bgwhite">
-                        <li class="flex-w p-b-20">
-                            <a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-                                <img src="<?= base_url() ?>assets/client/images/item-16.jpg" alt="IMG-PRODUCT">
-                            </a>
-
-                            <div class="w-size23 p-t-5">
-                                <a href="product-detail.html" class="s-text20">
-                                    White Shirt With Pleat Detail Back
+                        <?php foreach ($barang as $key => $data) { ?>
+                            <li class="flex-w p-b-20">
+                                <a href="<?= site_url("shop/detail/$data->seo_name") ?>" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+                                    <img src="<?= base_url() ?>assets/img/uploads/produk/<?= $data->gambar_name ?>" alt="IMG-PRODUCT">
                                 </a>
 
-                                <span class="dis-block s-text17 p-t-6">
-                                    $19.00
-                                </span>
-                            </div>
-                        </li>
+                                <div class="w-size23 p-t-5">
+                                    <a href="<?= site_url("shop/detail/$data->seo_name") ?>" class="s-text20">
+                                        <b><?= character_limiter($data->name, 31) ?></b>
+                                    </a>
 
-                        <li class="flex-w p-b-20">
-                            <a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-                                <img src="<?= base_url() ?>assets/client/images/item-17.jpg" alt="IMG-PRODUCT">
-                            </a>
-
-                            <div class="w-size23 p-t-5">
-                                <a href="product-detail.html" class="s-text20">
-                                    Converse All Star Hi Black Canvas
-                                </a>
-
-                                <span class="dis-block s-text17 p-t-6">
-                                    $39.00
-                                </span>
-                            </div>
-                        </li>
-
-                        <li class="flex-w p-b-20">
-                            <a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-                                <img src="<?= base_url() ?>assets/client/images/item-08.jpg" alt="IMG-PRODUCT">
-                            </a>
-
-                            <div class="w-size23 p-t-5">
-                                <a href="product-detail.html" class="s-text20">
-                                    Nixon Porter Leather Watch In Tan
-                                </a>
-
-                                <span class="dis-block s-text17 p-t-6">
-                                    $17.00
-                                </span>
-                            </div>
-                        </li>
-
-
+                                    <span class="dis-block s-text17 p-t-6">
+                                        <?= "Rp " . number_format($data->harga, 2, ',', '.'); ?>
+                                    </span>
+                                </div>
+                            </li>
+                        <?php } ?>
                     </ul>
 
                 </div>

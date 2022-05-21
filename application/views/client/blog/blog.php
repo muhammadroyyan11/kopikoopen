@@ -1,5 +1,5 @@
 <!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(<?= base_url()?>assets/client/images/blognameasd092u123.jpg);">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(<?= base_url() ?>assets/client/images/blognameasd092u123.jpg);">
 	<h2 class="l-text2 t-center">
 		Blog
 	</h2>
@@ -18,7 +18,7 @@
 					?>
 						<div class="item-blog p-b-80">
 							<a href="#" class="item-blog-img pos-relative dis-block hov-img-zoom">
-								<img src="<?= base_url() ?>assets/img/uploads/artikel/<?= $data->gambar_name?>" alt="IMG-BLOG">
+								<img src="<?= base_url() ?>assets/img/uploads/artikel/<?= $data->gambar_name ?>" alt="IMG-BLOG">
 
 								<span class="item-blog-date dis-block flex-c-m pos1 size17 bg4 s-text1">
 									<?= $dateMasuk->format('d F Y') ?>
@@ -27,14 +27,14 @@
 
 							<div class="item-blog-txt p-t-33">
 								<h4 class="p-b-11">
-									<a href="<?= base_url("blog/read/$data->seo_judul")?>" class="m-text24">
+									<a href="<?= base_url("blog/read/$data->seo_judul") ?>" class="m-text24">
 										<?= $data->judul ?>
 									</a>
 								</h4>
 
 								<div class="s-text8 flex-w flex-m p-b-21">
 									<span>
-										By <?= $data->nama_lengkap?>
+										By <?= $data->nama_lengkap ?>
 										<span class="m-l-3 m-r-6">|</span>
 									</span>
 
@@ -48,7 +48,7 @@
 								<?= character_limiter($data->konten, 250) ?>
 								<br>
 
-								<a href="<?= base_url("blog/read/$data->seo_judul")?>" class="s-text20">
+								<a href="<?= base_url("blog/read/$data->seo_judul") ?>" class="s-text20">
 									Continue Reading
 									<i class="fa fa-long-arrow-right m-l-8" aria-hidden="true"></i>
 								</a>
@@ -86,7 +86,7 @@
 						<?php foreach ($kartikel as $key => $data) { ?>
 							<li class="p-t-6 p-b-8 bo6">
 								<a href="#" class="s-text13 p-t-5 p-b-5">
-									<?= $data->nama?>
+									<?= $data->nama ?>
 								</a>
 							</li>
 						<?php } ?>
@@ -99,85 +99,24 @@
 					</h4>
 
 					<ul class="bgwhite">
-						<li class="flex-w p-b-20">
-							<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-								<img src="images/item-16.jpg" alt="IMG-PRODUCT">
-							</a>
 
-							<div class="w-size23 p-t-5">
-								<a href="product-detail.html" class="s-text20">
-									White Shirt With Pleat Detail Back
+						<?php foreach ($barang as $key => $data) { ?>
+							<li class="flex-w p-b-20">
+								<a href="<?= site_url("shop/detail/$data->seo_name") ?>" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+									<img src="<?= base_url() ?>assets/img/uploads/produk/<?= $data->gambar_name ?>" alt="IMG-PRODUCT">
 								</a>
 
-								<span class="dis-block s-text17 p-t-6">
-									$19.00
-								</span>
-							</div>
-						</li>
+								<div class="w-size23 p-t-5">
+									<a href="<?= site_url("shop/detail/$data->seo_name") ?>" class="s-text20">
+										<b><?= character_limiter($data->name, 31) ?></b>
+									</a>
 
-						<li class="flex-w p-b-20">
-							<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-								<img src="images/item-17.jpg" alt="IMG-PRODUCT">
-							</a>
-
-							<div class="w-size23 p-t-5">
-								<a href="product-detail.html" class="s-text20">
-									Converse All Star Hi Black Canvas
-								</a>
-
-								<span class="dis-block s-text17 p-t-6">
-									$39.00
-								</span>
-							</div>
-						</li>
-
-						<li class="flex-w p-b-20">
-							<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-								<img src="images/item-08.jpg" alt="IMG-PRODUCT">
-							</a>
-
-							<div class="w-size23 p-t-5">
-								<a href="product-detail.html" class="s-text20">
-									Nixon Porter Leather Watch In Tan
-								</a>
-
-								<span class="dis-block s-text17 p-t-6">
-									$17.00
-								</span>
-							</div>
-						</li>
-
-						<li class="flex-w p-b-20">
-							<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
-							</a>
-
-							<div class="w-size23 p-t-5">
-								<a href="product-detail.html" class="s-text20">
-									Denim jacket blue
-								</a>
-
-								<span class="dis-block s-text17 p-t-6">
-									$39.00
-								</span>
-							</div>
-						</li>
-
-						<li class="flex-w p-b-20">
-							<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
-								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
-							</a>
-
-							<div class="w-size23 p-t-5">
-								<a href="product-detail.html" class="s-text20">
-									Nixon Porter Leather Watch In Tan
-								</a>
-
-								<span class="dis-block s-text17 p-t-6">
-									$17.00
-								</span>
-							</div>
-						</li>
+									<span class="dis-block s-text17 p-t-6">
+										<?= "Rp " . number_format($data->harga, 2, ',', '.'); ?>
+									</span>
+								</div>
+							</li>
+						<?php } ?>
 					</ul>
 
 

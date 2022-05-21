@@ -68,6 +68,7 @@ class Blog extends CI_Controller
 
 		$data['blog'] = $this->base->get_join('posting',$config['per_page'],$from);
 		
+		$data['barang'] = $this->base_model->get_barang()->result();
 		$data['title'] = 'Artikel kopi koopen';
 
 		$this->template->load('client/template', 'client/blog/blog', $data);
@@ -80,6 +81,7 @@ class Blog extends CI_Controller
 
 		$data['posting'] = $row;
 		$data['title'] = $row->judul;
+		$data['barang'] = $this->base_model->get_barang()->result();
 		
 		$this->template->load('client/template', 'client/blog/read', $data);
     }
