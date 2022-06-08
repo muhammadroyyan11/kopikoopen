@@ -15,7 +15,7 @@
 
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
 							<!-- Button -->
-							<a href="<?= site_url('shop')?>" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+							<a href="<?= site_url('shop') ?>" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 								Shop Now
 							</a>
 							</dv>
@@ -50,7 +50,74 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- ======= Services Section ======= -->
+	<div id="services" class="bg5 p-b-55 services-area area-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 70px;">
+					<div class="section-headline services-head text-center">
+						<h2>THE BEST COFFEE SHOP</h2><br>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<!-- Start Left services -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<!-- end col-md-4 -->
+					<div class=" about-move">
+						<div class="services-details">
+							<div class="single-services">
+								<a class="services-icon" href="#">
+									<img src="<?= base_url() ?>assets/client/images/icons/icon-1.png" alt="">
+								</a>
+								<h4>Local Coffe Beens</h4>
+								<p>
+									Kami memilih biji kopi local berkualitas , sehingga menghasilkan cita rasa yang tidak mengecewakan
+								</p>
+							</div>
+						</div>
+						<!-- end about-details -->
+					</div>
+				</div>
+				<!-- End Left services -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<!-- end col-md-4 -->
+					<div class=" about-move">
+						<div class="services-details">
+							<div class="single-services">
+								<a class="services-icon" href="#">
+									<img src="<?= base_url() ?>assets/client/images/icons/icon-2.png" alt="">
+								</a>
+								<h4>Best Quality</h4>
+								<p>
+									Kualitas Menu di Koopen sangat bagus, karena seluruh proses nya terjaga
+								</p>
+							</div>
+						</div>
+						<!-- end about-details -->
+					</div>
+				</div>
+				<!-- End Left services -->
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<!-- end col-md-4 -->
+					<div class=" about-move">
+						<div class="services-details">
+							<div class="single-services">
+								<a class="services-icon" href="#">
+									<img src="<?= base_url() ?>assets/client/images/icons/icon-3.png" alt="">
+								</a>
+								<h4>Perfect Blend Coffe</h4>
+								<p>
+									Fokus untuk menciptakan pengalaman minum kopi yang tiada duanya.
+								</p>
+							</div>
+						</div>
+						<!-- end about-details -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Services Section -->
 
 	<!-- New Product -->
 	<section class="newproduct bgwhite p-t-45 p-b-105">
@@ -126,68 +193,26 @@
 				</div>
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
-					<div class="bgwhite hov-img-zoom pos-relative p-b-20per-ssm">
-						<img src="<?= base_url() ?>assets/client/images/shop-item-09.jpg" alt="IMG-BANNER">
+					<div class="hov-img-zoom pos-relative">
+						<img src="<?= base_url() ?>assets/img/uploads/275715489_384141570202484_402096620504865871_n.jpg" alt="IMG-BANNER" width="100" height="427">
 
-						<div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
-							<div class="t-center">
-								<a href="product-detail.html" class="dis-block s-text3 p-b-5">
-									Gafas sol Hawkers one
-								</a>
+						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
+							<span class="m-text9 p-t-45 fs-20-sm">
+								Check Now 
+							</span>
 
-								<span class="block2-oldprice m-text7 p-r-5">
-									$29.50
-								</span>
+							<h3 class="l-text1 fs-35-sm">
+								Our Event
+							</h3>
 
-								<span class="block2-newprice m-text8">
-									$15.90
-								</span>
-							</div>
-
-							<div class="flex-c-m p-t-44 p-t-30-xl">
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 days">
-										69
-									</span>
-
-									<span class="s-text5">
-										days
-									</span>
-								</div>
-
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 hours">
-										04
-									</span>
-
-									<span class="s-text5">
-										hrs
-									</span>
-								</div>
-
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 minutes">
-										32
-									</span>
-
-									<span class="s-text5">
-										mins
-									</span>
-								</div>
-
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 seconds">
-										05
-									</span>
-
-									<span class="s-text5">
-										secs
-									</span>
-								</div>
-							</div>
+							<a href="<?= site_url('event	')?>" class="s-text4 hov2 p-t-20 ">
+								View event
+							</a>
 						</div>
 					</div>
 				</div>
+
+				
 			</div>
 		</div>
 	</section>
@@ -209,13 +234,13 @@
 					<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
 						<!-- Block3 -->
 						<div class="block3">
-							<a href="<?= base_url("blog/read/$data->seo_judul")?>" class="block3-img dis-block hov-img-zoom">
+							<a href="<?= base_url("blog/read/$data->seo_judul") ?>" class="block3-img dis-block hov-img-zoom">
 								<img src="<?= base_url() ?>assets/img/uploads/artikel/<?= $data->gambar_name ?>" alt="IMG-BLOG" width="100" height="240">
 							</a>
 
 							<div class="block3-txt p-t-14">
 								<h4 class="p-b-7">
-									<a href="<?= base_url("blog/read/$data->seo_judul")?>" class="m-text11">
+									<a href="<?= base_url("blog/read/$data->seo_judul") ?>" class="m-text11">
 										<?= $data->judul ?>
 									</a>
 								</h4>

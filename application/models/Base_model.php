@@ -367,4 +367,16 @@ class Base_model extends CI_Model
             'date'         => ''
         ];
     }
+
+    public function addEvent($post)
+    {
+        $params = [
+            'nama_event' => $post['nama_event'],
+            'description' => $post['description'],
+            'tanggal' => $post['tanggal'],
+            'lokasi' => $post['lokasi'],
+            'foto_pamflet' => $post['image']
+        ];
+        $this->db->insert('tbl_tentang_kami', $params);
+    }
 }

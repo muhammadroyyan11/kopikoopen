@@ -144,6 +144,12 @@
                         </li>
                     </ul>
                 </li>
+                <li class=" nav-item"><a href="#"><i class="feather icon-music"></i><span class="menu-title" data-i18n="Data List">Event</span></a>
+                    <ul class="menu-content">
+                        <li <?= $this->uri->segment(1) == 'event' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/event') ?>"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List View">Data Event</span></a>
+                        </li>
+                    </ul>
+                </li>
                 <!-- <li class=" nav-item"><a href="#"><i class="feather icon-list"></i><span class="menu-title" data-i18n="Data List">Main Menu</span></a>
                     <ul class="menu-content">
                         <li <?= $this->uri->segment(1) == 'slide' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/slide') ?>"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List View">Content slide</span></a>
@@ -158,7 +164,7 @@
                 </li>
                 <li <?= $this->uri->segment(1) == 'peminjaman' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/peminjaman') ?>"><i class="feather icon-x-circle"></i><span class="menu-title" data-i18n="peminjaman">Peminjaman barang</span></a>
                 </li> -->
-                <li class=" navigation-header"><span>Kelola Blog</span>
+                <!-- <li class=" navigation-header"><span>Kelola Blog</span>
                 </li>
                 <li <?= $this->uri->segment(1) == 'categori' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/categori') ?>"><i class="feather icon-save"></i><span class="menu-title" data-i18n="Laporan">Categori</span></a>
                 </li>
@@ -169,7 +175,7 @@
                     </li>
                     <li <?= $this->uri->segment(1) == 'user' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/user') ?>"><i class="feather icon-users"></i><span class="menu-title" data-i18n="User Management">User Management</span></a>
                     </li>
-                <?php } ?>
+                <?php } ?> -->
 
             </ul>
         </div>
