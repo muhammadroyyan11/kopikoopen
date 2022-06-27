@@ -68,9 +68,7 @@ class Event extends CI_Controller
 
     public function proses()
     {
-        // $post = $this->input->post(null, TRUE);
-
-        // var_dump($post);
+       
         $tanggal = date("Y-m-d");
         $login = userdata('id_user');
         $post = $this->input->post(null, TRUE);
@@ -82,7 +80,10 @@ class Event extends CI_Controller
         $config['file_name']            = 'event-' . date('ymd') . '-' . substr(md5(rand()), 0, 10);
 
         $this->load->library('upload', $config);
-
+        
+        $post = $this->input->post(null, TRUE);
+        $post['image'] = $this->upload->data('file_name');
+        var_dump($post);
         if (isset($_POST['add'])) {
             if (@$_FILES['image']['name'] != null) {
                 if ($this->upload->do_upload('image')) {

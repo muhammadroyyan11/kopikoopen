@@ -8,7 +8,6 @@
                 <?= form_open_multipart('admin/event/proses') ?>
                 <div class="form-body">
                     <div class="row">
-
                         <div class="col-12">
                             <div class="form-group row">
                                 <div class="col-md-4">

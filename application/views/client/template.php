@@ -83,6 +83,10 @@
                             </li>
 
                             <li>
+                                <a href="<?= site_url('event') ?>">New Event</a>
+                            </li>
+
+                            <li>
                                 <a href="<?= site_url('outlet') ?>">Outlet</a>
                             </li>
 

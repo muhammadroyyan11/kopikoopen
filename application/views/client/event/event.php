@@ -47,21 +47,18 @@
 							Tak banyak kedai kopi di Malang yang punya keberanian bersikap seperti Ipong, atau bahkan mungkin hanya Toko Kopi Koopen merupakan satu-satunya kedai kopi dengan standar barista yang terkurasi ketat yang menyediakan biji kopi hanya dari Malang.” Koopen kopi dari malang”
 						</p>
 
-						<div>
 							<div class="bo13 p-l-29 m-l-9 p-b-10">
-								<p class="	m-text26 p-t-15 p-b-16">
-									
-								</p>
-								<table>
+								<br>
+								<table style="color: #888; width:100%;">
 									<tr>
-										<td width="100">Tanggal</td>
-										<td width="10">:</td>
-										<td>Selasa, 25 Juni 2022</td>
+										<td class="p-b-11">Tanggal</td>
+										<td class="p-b-11">:</td>
+										<td class="p-b-11">Selasa, 25 Juni 2022</td>
 									</tr>
 									<tr>
-										<td width="100">Tempat</td>
-										<td width="10">:</td>
-										<td>Koopen Ijen</td>
+										<td class="p-b-11">Tempat</td>
+										<td class="p-b-11"">:</td>
+										<td class="p-b-11">Koopen Ijen</td>
 									</tr>
 								</table>
 						</div>
