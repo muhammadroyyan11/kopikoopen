@@ -1,11 +1,4 @@
-<!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url( <?= base_url() ?>assets/images/about.jpg);">
-    <h2 class="l-text2 t-center">
-        About Us
-    </h2>
-</section>
 
-<!-- content page -->
 <section class="bgwhite p-t-66 p-b-38">
     <div class="container">
         <div class="row">
