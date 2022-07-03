@@ -117,9 +117,11 @@ class Base_model extends CI_Model
         $this->db->select('*');
         $this->db->from('posting');
         $this->db->order_by('judul', 'ASC');
+
         if ($id != null) {
             $this->db->where('id_posting', $id);
         }
+
         $query = $this->db->get();
 
         return $query;
@@ -196,6 +198,8 @@ class Base_model extends CI_Model
         $this->db->select('*');
         $this->db->from('posting');
         $this->db->order_by('id_posting', 'DESC');
+        $this->db->join('kartikel', 'kartikel.id_kartikel = posting.id_kartikel');
+        $this->db->join('user', 'user.id_user = posting.user');
         $this->db->limit(3);
         $query = $this->db->get();
         return $query;

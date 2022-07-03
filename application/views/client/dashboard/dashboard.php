@@ -245,7 +245,7 @@
 									</a>
 								</h4>
 
-								<span class="s-text6">By</span> <span class="s-text7">Admin</span>
+								<span class="s-text6">By</span> <span class="s-text7"><?= $data->nama_lengkap?></span>
 								<span class="s-text6">on</span> <span class="s-text7"><?= $dateMasuk->format('d F Y') ?></span>
 
 								<?= character_limiter($data->konten, 200) ?>

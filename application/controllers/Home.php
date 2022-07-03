@@ -41,7 +41,7 @@ class Home extends CI_Controller {
 		$data['limit'] = $this->base_model->get_artikel()->result();
 		$data['title'] = 'Home';
 		$data['posting'] = $posting;
-
+		// var_dump($data['limit']);
 		$this->template->load('client/template', 'client/dashboard/dashboard', $data);
 	}
 }
