@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:url" content="<?= 'https://kopikoopen.com/blog/read/'. $posting->seo_judul ?>">
+    <meta property="og:url" content="<?= 'https://kopikoopen.com/blog/read/' . $posting->seo_judul ?>">
 
     <meta property="og:type" content="article">
 
-    <meta property="og:title" content="<?= $posting->judul . " | TOKO KOPI KOOPEN";?>">
+    <meta property="og:title" content="<?= $posting->judul . " | TOKO KOPI KOOPEN"; ?>">
 
     <meta property="og:description" content="<?= $posting->konten; ?>">
 
@@ -45,6 +45,9 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/client/css/util.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/client/css/main.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/assets/css/share.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url()?>assets/css/social-button.css">
+    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
     <!--===============================================================================================-->
 </head>
 

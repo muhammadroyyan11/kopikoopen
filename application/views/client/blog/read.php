@@ -1,4 +1,15 @@
 <!-- content page -->
+
+<style type='text/css'>
+    .feed-share {
+        position: relative;
+        overflow: hidden;
+        line-height: 0;
+        margin: 0 0 30px
+    }
+</style>
+
+
 <section class="bgwhite p-t-60 p-b-25">
     <div class="container">
         <div class="row">
@@ -33,10 +44,19 @@
                                     <?= $posting->nama ?>
                                 </span>
 
+
                                 <!-- <span>
 										8 Comments
 									</span> -->
                             </div>
+
+                            <div class="flex-w flex-m p-b-21">
+                                <p class="share-text">bagikan : </p>&nbsp;&nbsp;
+                                <a href="" class="btn tombol-twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;
+                                <a href="" class="btn tombol-facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>&nbsp;
+                                <a href="https://api.whatsapp.com/send?text=TN man buys car with 60,000 Rs 10 coins | <?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapps</a>
+                            </div>
+                            <hr>
 
                             <!-- <p class="p-b-25">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit amet tempor magna. Donec eros sem, porta eget leo et, varius eleifend mauris. Donec eu leo congue, faucibus quam eu, viverra mauris. Nulla consectetur lorem mi, at scelerisque metus hendrerit vitae. Proin vel magna vel neque porta ultricies non eget mauris. Suspendisse potenti.
@@ -47,21 +67,7 @@
 								</p> -->
                             <p align="justify"> <?= $posting->konten ?> </p><br>
 
-                            <div class='feed-share'>
-                                <ul class='share-buttons social-footer social-bg'>
-                                    <li class='share-icon'><span class='s-icon'></span></li>
-                                    <li class='facebook-f'><a class='facebook window-piki' data-height='650' data-url='https://www.facebook.com/sharer.php?u=' data-width='550' href='javascript:;' rel='nofollow' title='Facebook'></a></li>
-                                    <li class='twitter'><a class='twitter window-piki' data-height='460' data-url='https://twitter.com/intent/tweet?url=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html&text=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor' data-width='550' href='javascript:;' rel='nofollow' title='Twitter'></a></li>
-                                    <li class='whatsapp whatsapp-desktop'><a class='whatsapp window-piki' data-height='650' data-url='https://web.whatsapp.com/send?text=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor | https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html' data-width='550' href='javascript:;' rel='nofollow' title='Whatsapp'></a></li>
-                                    <li class='whatsapp whatsapp-mobile'><a class='whatsapp window-piki' data-height='650' data-url='https://api.whatsapp.com/send?text=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor | https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html' data-width='550' href='javascript:;' rel='nofollow' target='_blank' title='Whatsapp'></a></li>
-                                    <li class='pinterest'><a class='pinterest window-piki' data-height='750' data-url='https://www.pinterest.com/pin/create/button/?url=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html&media=https://lh3.googleusercontent.com/-uPG9kYb8pck/YrPlexuO0MI/AAAAAAAABvk/1SyKtxCZAY4ahD07Vsw5jWsXqA5Zp1CbACNcBGAsYHQ/s1600/1655956857880338-0.png&description=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor' data-width='735' href='javascript:;' rel='nofollow' title='Pinterest'></a></li>
-                                    <li class='linkedin'><a class='linkedin window-piki' data-height='700' data-url='https://www.linkedin.com/shareArticle?url=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html' data-width='1000' href='javascript:;' rel='nofollow' title='LinkedIn'></a></li>
-                                    <li class='reddit'><a class='reddit window-piki' data-height='460' data-url='https://reddit.com/submit?url=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html&title=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor' data-width='550' href='javascript:;' rel='nofollow' title='Reddit'></a></li>
-                                    <li class='telegram'><a class='telegram window-piki' data-height='460' data-url='https://telegram.me/share/url?url=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html&text=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor' data-width='550' href='javascript:;' rel='nofollow' title='Telegram'></a></li>
-                                    <li class='email'><a class='email window-piki' data-height='460' data-url='mailto:?subject=Union Minister Mukhtar Abbas Naqvi likely to be new J&K Lt Governor&body=https://www.thekashmirinfo.com/2022/06/union-minister-mukhtar-abbas-naqvi.html' data-width='550' href='javascript:;' rel='nofollow' title='Email'></a></li>
-                                    <li class='show-hid'><a href='javascript:;' rel='nofollow'></a></li>
-                                </ul>
-                            </div>
+
                         </div>
 
 
