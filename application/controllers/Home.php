@@ -37,11 +37,12 @@ class Home extends CI_Controller {
 		$posting->judul = null;
 
 		$data['posting'] = $posting;
+		
 		$data['home'] = $this->base_model->get('slide')->result();
 		$data['barang'] = $this->base_model->get_barang()->result();
 		$data['posting'] = $this->base_model->get_artikel()->result();
 		$data['title'] = 'Home';
-		
+
 		$this->template->load('client/template', 'client/dashboard/dashboard', $data);
 	}
 }
