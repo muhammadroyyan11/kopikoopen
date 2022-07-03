@@ -228,7 +228,7 @@
 			</div>
 
 			<div class="row">
-				<?php foreach ($posting as $key => $data) {
+				<?php foreach ($limit as $key => $data) {
 					$dateMasuk = new DateTime($data->date);
 				?>
 					<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">

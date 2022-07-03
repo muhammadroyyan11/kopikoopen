@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 
 		$data['home'] = $this->base_model->get('slide')->result();
 		$data['barang'] = $this->base_model->get_barang()->result();
-		$data['posting'] = $this->base_model->get_artikel()->result();
+		$data['limit'] = $this->base_model->get_artikel()->result();
 		$data['title'] = 'Home';
 		$data['posting'] = $posting;
 
