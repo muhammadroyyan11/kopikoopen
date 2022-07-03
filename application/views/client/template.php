@@ -4,7 +4,12 @@
 <head>
     <title>TOKO KOPI KOOPEN | <?= $title ?></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <meta name="keyword" content="toko kopi koopen, kopi koopen, Kedai kopi koopen">
 
     <meta property="og:url" content="<?= 'https://kopikoopen.com/blog/read/' . $posting->seo_judul ?>">
 
