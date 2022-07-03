@@ -54,7 +54,7 @@
                                 <p class="share-text">bagikan : </p>&nbsp;&nbsp;
                                 <a href="https://twitter.com/intent/tweet?url=<?= base_url() ?>blog/read/<?= $posting->seo_judul ?>&text=<?= $posting->judul ?>" class="btn btn-circle tombol-twitter" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;
                                 <a href="https://www.facebook.com/sharer.php?u=<?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-facebook" target="_blank"><i class="fa fa-facebook"></i>&nbsp;</a>&nbsp;
-                                <a href="https://api.whatsapp.com/send?text=<?= $posting->judul ?> | https://kopikoopen.com/blog/read/<?= $posting->seo_judul ?>" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=<?= $posting->judul ?> |" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
                             </div>
                             <hr>
 
