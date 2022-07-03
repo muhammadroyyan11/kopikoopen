@@ -31,7 +31,6 @@
 
                                 <span>
                                     <?= $posting->nama ?>
-
                                 </span>
 
                                 <!-- <span>

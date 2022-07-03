@@ -5,6 +5,16 @@
     <title>TOKO KOPI KOOPEN | <?= $title ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="<?= 'https://kopikoopen.com/blog/read/'. $posting->seo_judul ?>">
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:title" content="<?= $posting->judul . " | TOKO KOPI KOOPEN";?>">
+
+    <meta property="og:description" content="<?= $posting->konten; ?>">
+
+    <meta property="og:image" content="<?= base_url() ?>assets/img/uploads/artikel/<?= $posting->gambar_name ?>">
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="<?= base_url() ?>assets/client/images/icons/koopen.png" />
     <!--===============================================================================================-->
@@ -231,7 +241,7 @@
                         <i class="fs-18 color1 p-r-20 fa fa-clock-o"></i>Senin - Minggu (07.00 - 23.00), Jumat (13.00 - 23.00)<br>
                         <i class="fs-18 color1 p-r-20 fa fa-phone"> </i> 0838-3437-6927 (Klojen) - 0822-2942-7153 (Ijen) <br>
                         <i class="fs-18 color1 p-r-20 fa fa-envelope"></i> tokokopi@kopikoopen.com
-                        
+
                     </p>
                 </div>
             </div>
