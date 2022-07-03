@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>KOPI KOOPEN - <?= $title ?></title>
+    <title>KOPI KOOPEN - <?= strtoupper($title) ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-language" content="id-id">
     <meta name="description" content="Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen ">
-
 
     <meta name="keyword" content="toko kopi koopen, kopi koopen, Kedai kopi koopen, koopen malang">
 
