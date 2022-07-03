@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen Kedai Kopi Koopen ">
 
 
-    <meta name="keyword" content="toko kopi koopen, kopi koopen, Kedai kopi koopen">
+    <meta name="keyword" content="toko kopi koopen, kopi koopen, Kedai kopi koopen, koopen malang">
 
     <meta property="og:url" content="<?= 'https://kopikoopen.com/blog/read/' . $posting->seo_judul ?>">
 
