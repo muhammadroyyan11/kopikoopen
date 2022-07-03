@@ -54,7 +54,7 @@
                                 <p class="share-text">bagikan : </p>&nbsp;&nbsp;
                                 <a href="" class="btn tombol-twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;
                                 <a href="" class="btn tombol-facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>&nbsp;
-                                <a href="https://api.whatsapp.com/send?text=TN man buys car with 60,000 Rs 10 coins | <?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapps</a>
+                                <a href="https://api.whatsapp.com/send?text=Artikel Toko Kopi Koopen Share | <?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapps</a>
                             </div>
                             <hr>
 
