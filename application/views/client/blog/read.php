@@ -11,7 +11,7 @@
 
                         <div class="blog-detail-txt p-t-33">
                             <h4 class="p-b-11 m-text24">
-                                <?= $posting->judul ?> , <?= site_url() ?><?= $posting->seo_judul ?>
+                                <?= $posting->judul ?> 
                             </h4>
 
                             <div class="s-text8 flex-w flex-m p-b-21">
