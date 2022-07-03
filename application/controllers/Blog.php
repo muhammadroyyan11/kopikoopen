@@ -77,6 +77,7 @@ class Blog extends CI_Controller
 		
 		$data['barang'] = $this->base_model->get_barang()->result();
 		$data['title'] = 'Artikel kopi koopen';
+		$data['posting'] = $posting;
 
 		$this->template->load('client/template', 'client/blog/blog', $data);
 	}
