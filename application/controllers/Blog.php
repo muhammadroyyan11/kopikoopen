@@ -33,6 +33,13 @@ class Blog extends CI_Controller
 	public function index()
 	{
 		// START PAGINATION
+
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
 		$jumlah_data = $this->base->count('posting');
 
 		$config['base_url'] = base_url() . 'blog/index/';
