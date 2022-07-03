@@ -52,8 +52,8 @@
 
                             <div class="flex-w flex-m p-b-21">
                                 <p class="share-text">bagikan : </p>&nbsp;&nbsp;
-                                <a href="" class="btn tombol-twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;
-                                <a href="" class="btn tombol-facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>&nbsp;
+                                <a href="https://twitter.com/intent/tweet?url=<?= base_url() ?>blog/read/<?= $posting->seo_judul ?>&text=<?= $posting->judul ?>" class="btn tombol-twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;
+                                <a href="https://www.facebook.com/sharer.php?u=<?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>&nbsp;
                                 <a href="https://api.whatsapp.com/send?text=<?= $posting->judul ?> | <?= base_url() ?>blog/read/<?= $posting->seo_judul ?>" class="btn tombol-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapps</a>
                             </div>
                             <hr>
