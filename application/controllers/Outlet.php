@@ -34,6 +34,13 @@ class Outlet extends CI_Controller
 		//$data['galleries'] = $this->restapi->Apiget('http://localhost:8000/api/v1/galleries');
 
 		$query = $this->base->getOutlet($id);
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		$data['row'] = $query->row();
 		$data['title'] = 'View Outlet';
 

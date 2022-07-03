@@ -32,6 +32,13 @@ class Shop extends CI_Controller {
 	{
 		// START PAGINATION
 		$jumlah_data = $this->base->count('barang');
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		
 		$config['base_url'] = base_url().'shop/index/';
 		$config['total_rows'] = $jumlah_data;
@@ -60,6 +67,13 @@ class Shop extends CI_Controller {
 
 	public function detail($seo_name)
     {
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		$row = $this->base->getProduk($seo_name);
 		$data['kproduk'] = $this->base_model->get('kproduk')->result();
 

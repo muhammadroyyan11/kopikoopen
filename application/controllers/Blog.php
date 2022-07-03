@@ -40,6 +40,8 @@ class Blog extends CI_Controller
 		$posting->gambar_name = null;
 		$posting->judul = null;
 
+		$data['posting'] = $posting;
+
 		$jumlah_data = $this->base->count('posting');
 
 		$config['base_url'] = base_url() . 'blog/index/';

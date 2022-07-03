@@ -14,6 +14,13 @@ class Event extends CI_Controller {
     }
 	public function index()
 	{
+        $posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
         $data['title'] = 'Event Koopen';
 		$this->template->load('client/template', 'client/event/event', $data);
 	}

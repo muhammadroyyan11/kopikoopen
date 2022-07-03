@@ -31,6 +31,13 @@ class About extends CI_Controller {
 	
 	public function index()
 	{
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		$data['title'] = 'Tentang Kami';
 		
 		$this->template->load('client/template', 'client/about/about', $data);

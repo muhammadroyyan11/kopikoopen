@@ -30,6 +30,13 @@ class Home extends CI_Controller {
     }
 	public function index()
 	{
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		$data['home'] = $this->base_model->get('slide')->result();
 		$data['barang'] = $this->base_model->get_barang()->result();
 		$data['posting'] = $this->base_model->get_artikel()->result();

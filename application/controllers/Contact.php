@@ -31,6 +31,13 @@ class Contact extends CI_Controller
 	 
 	public function index()
 	{
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$data['posting'] = $posting;
 		$data['title'] = 'Kontak kami';
 		
 		$this->template->load('client/template', 'client/contact/contact', $data);
@@ -42,7 +49,7 @@ class Contact extends CI_Controller
 
         $cek = $this->_checkEmail($input['email']);
         
-        var_dump($cek);
+        // var_dump($cek);
         if($cek){
 		$data = [
     			'name' => $input['name'],
