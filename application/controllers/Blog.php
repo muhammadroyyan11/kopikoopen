@@ -84,6 +84,57 @@ class Blog extends CI_Controller
 		$this->template->load('client/template', 'client/blog/blog', $data);
 	}
 
+	public function category($id)
+	{
+		$posting = new stdClass();
+		$posting->seo_judul = null;
+		$posting->konten = null;
+		$posting->gambar_name = null;
+		$posting->judul = null;
+
+		$jumlah_data = $this->base->count('posting');
+
+		$config['base_url'] = base_url() . 'blog/index/';
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 5;
+		$from = $this->uri->segment(3);
+
+		// TAMPILAN NOMER PAGINATION
+		// $config['full_tag_open'] = '<div class="pagination flex-m flex-w p-t-26">';
+		// $config['full_tag_close'] = '</div>';
+
+		// // $config['first_link'] = 'First';
+		// $config['first_tag_open'] = '<a href="#" class="item-pagination flex-c-m trans-0-4">';
+		// $config['first_tag_close'] = '</a>';
+
+		// // $config['last_link'] = 'Last';
+		// $config['last_tag_open'] = '<a href="#" class="item-pagination flex-c-m trans-0-4">';
+		// $config['last_tag_close'] = '</a>';
+
+		$config['cur_tag_open'] = '<a href="#" class="item-pagination flex-c-m trans-0-4  active-pagination">';
+		$config['cur_tag_close'] = '</a>';
+
+		$config['cur_tag_open'] = '<a href="#" class="item-pagination flex-c-m trans-0-4  active-pagination">';
+		$config['cur_tag_close'] = '</a>';
+
+		$config['attributes'] = array('class' => 'item-pagination flex-c-m trans-0-4');
+
+		$this->pagination->initialize($config);
+		// END PAGINATION
+
+		// $data['blog'] = $this->base_model->get_join()->result();
+		$data['kartikel'] = $this->base_model->get('kartikel')->result();
+
+		$data['blog'] = $this->base->get_category('posting',$config['per_page'],$from, $id);
+
+		// var_dump($data['blog']);
+		
+		$data['barang'] = $this->base_model->get_barang()->result();
+		$data['title'] = 'Artikel kopi koopen';
+		$data['posting'] = $posting;
+
+	}
+
 	public function read($seo_judul)
     {
 		$row = $this->base->getPosting($seo_judul);

@@ -205,6 +205,20 @@ class Base_model extends CI_Model
         return $query;
     }
 
+    public function get_category($table, $number = null, $offset = null, $id)
+    {
+       // $this->db->select('*');
+        // $this->db->from('posting');
+        $this->db->order_by('id_posting', 'desc');
+        // $this->db->join('kartikel', 'kartikel.id_kartikel = posting.id_kartikel');
+        // $this->db->join('user', 'user.id_user = posting.user');
+        // $this->db->order_by($order, $az);
+
+        $this->db->where('id_kartikel', $id);
+        $sql = $this->db->get($table, $number, $offset)->result();
+        return $sql;
+    }
+
     public function getMax($table, $field, $kode = null)
     {
         $this->db->select_max($field);

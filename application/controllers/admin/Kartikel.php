@@ -51,7 +51,7 @@ class Kartikel extends CI_Controller
             set_pesan('Gagal saat menyimpan data', false);
         }
 
-        redirect('kartikel');
+        redirect('admin/kartikel');
     }
 
     public function delete($id)
