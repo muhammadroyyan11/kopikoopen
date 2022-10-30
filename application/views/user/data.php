@@ -37,7 +37,7 @@
                                                 <td>
                                                 <a href="<?= base_url('admin/user/toggle/') . $data['id_user'] ?>" class="btn btn-circle btn-sm <?= $data['is_active'] ? 'btn-secondary' : 'btn-success' ?>" title="<?= $data['is_active'] ? 'Nonaktifkan User' : 'Aktifkan User' ?>"><i class="fa fa-fw fa-power-off"></i></a>
                                                 </td>
-                                                <td><?= $data['nama']; ?></td>
+                                                <td><?= $data['nama_lengkap']; ?></td>
                                                 <td><?= $data['username']; ?></td>
                                                 <td><?= $data['email']; ?></td>
                                                 <td><?= $data['no_telp']; ?></td>
