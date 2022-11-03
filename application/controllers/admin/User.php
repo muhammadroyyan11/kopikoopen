@@ -117,13 +117,41 @@ class User extends CI_Controller
 
     public function edit($id)
     {
+        $data['title'] = "Edit User";
+        $data['user'] = $this->base_model->getUser('user', ['id_user' => $id]);
+        $this->template->load('template', 'user/edit', $data);
+    }
+
+    public function prosesEdit()
+    {
+        $input = $this->input->post(null, true);
+        $input_data = [
+            'nama_lengkap'  => $input['nama'],
+            'username'      => $input['username'],
+            'email'         => $input['email'],
+            'no_telp'       => $input['no_telp'],
+            'role'          => $input['role']
+        ];
+
+        if ($this->base_model->update('user', 'id_user', $input['id_user'], $input_data)) {
+            set_pesan('data berhasil diubah.');
+            redirect('admin/user');
+        } else {
+            set_pesan('data gagal diubah.', false);
+            redirect('admin/user/edit/' . $input['id_user']);
+        }
+    }
+
+    public function edit2($id)
+    {
         // $id = encode_php_tags($getId);
         $this->_validasi('edit');
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Edit User";
             $data['user'] = $this->base_model->getUser('user', ['id_user' => $id]);
-            $this->template->load('template', 'user/edit', $data);
+            var_dump($data['user']);
+            // $this->template->load('template', 'user/edit', $data);
         } else {
             $input = $this->input->post(null, true);
             $input_data = [

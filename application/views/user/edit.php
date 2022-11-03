@@ -6,7 +6,7 @@
         <div class="card-content">
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
-                <?= form_open('', [], ['id_user' => $user['id_user']]); ?>
+                <?= form_open('admin/user/prosesEdit', [], ['id_user' => $user['id_user']]); ?>
                 <div class="form-body">
                     <div class="row">
                         <div class="col-12">
@@ -21,6 +21,11 @@
                                         <div class="form-control-position">
                                             <i class="feather icon-user"></i>
                                         </div>
+                                        <input type="hidden" id="id_user" class="form-control" name="id_user" placeholder="Masukkan username" value="<?= set_value('id_user', $user['id_user']); ?>">
+                                        <?= form_error('id_user', '<span class="text-danger small">', '</span>'); ?>
+                                        <div class="form-control-position">
+                                            <i class="feather icon-user"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +37,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="position-relative has-icon-left">
-                                        <input type="text" id="nama" class="form-control" name="nama" placeholder="Masukkan nama" value="<?= set_value('nama', $user['nama']); ?>">
+                                        <input type="text" id="nama" class="form-control" name="nama" placeholder="Masukkan nama" value="<?= set_value('nama_lengkap', $user['nama_lengkap']); ?>">
                                         <?= form_error('nama', '<span class="text-danger small">', '</span>'); ?>
                                         <div class="form-control-position">
                                             <i class="feather icon-user"></i>
