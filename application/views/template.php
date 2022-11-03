@@ -155,7 +155,7 @@
                     </li>
                     <li <?= $this->uri->segment(1) == 'user' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/user') ?>"><i class="feather icon-users"></i><span class="menu-title" data-i18n="User Management">User Management</span></a>
                     </li>
-                <?php } ?>\
+                <?php } ?>
 
             </ul>
         </div>
