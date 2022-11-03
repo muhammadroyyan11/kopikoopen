@@ -6,7 +6,7 @@
         <div class="card-content">
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
-                <?= form_open(); ?>
+                <?= form_open('admin/user/proses'); ?>
                 <div class="form-body">
                     <div class="row">
                         <div class="col-12">
@@ -113,11 +113,11 @@
                                 <div class="col-md-8">
                                     <div class="custom-control custom-radio">
                                         <input <?= set_radio('role', 'master'); ?> value="master" type="radio" id="master" name="role" class="custom-control-input">
-                                        <label class="custom-control-label" for="master">BEM MASTER</label>
+                                        <label class="custom-control-label" for="master">Admin</label>
                                     </div>
                                     <div class="custom-control custom-radio">
                                         <input <?= set_radio('role', 'admin'); ?> value="admin" type="radio" id="admin" name="role" class="custom-control-input">
-                                        <label class="custom-control-label" for="admin">Admin UKM/HMJ/LT</label>
+                                        <label class="custom-control-label" for="admin">Kreator</label>
                                     </div>
                                     <?= form_error('role', '<span class="text-danger small">', '</span>'); ?>
                                 </div>

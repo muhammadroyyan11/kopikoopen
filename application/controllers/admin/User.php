@@ -28,7 +28,7 @@ class User extends CI_Controller
         $this->form_validation->set_rules('role', 'Role', 'required|trim');
 
         if ($mode == 'add') {
-            $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]|alpha_numeric');
+            $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]');
             $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]');
             $this->form_validation->set_rules('password', 'Password', 'required|min_length[3]|trim');
             $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'matches[password]|trim');
@@ -47,15 +47,53 @@ class User extends CI_Controller
 
     public function add()
     {
-        $this->_validasi('add');
+        $data['title'] = "Tambah User";
+        $this->template->load('template', 'user/add', $data);
+    }
 
-        if ($this->form_validation->run() == false) {
+    public function proses()
+    {
+        $input = $this->input->post(null, true);
+
+        $input_data = [
+            'nama_lengkap'  => $input['nama'],
+            'username'      => $input['username'],
+            'email'         => $input['email'],
+            'no_telp'       => $input['no_telp'],
+            'role'          => $input['role'],
+            'password'      => password_hash($input['password'], PASSWORD_DEFAULT),
+            'created_at'    => time(),
+            'foto'          => 'user.png'
+        ];
+
+
+        if ($this->base_model->insert('user', $input_data)) {
+            set_pesan('data berhasil disimpan.');
+            redirect('admin/user');
+        } else {
+            set_pesan('data gagal disimpan', false);
+            redirect('admin/user/add');
+        }
+    }
+
+    public function add2()
+    {
+        $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]');
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[3]|trim');
+        $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'matches[password]|trim');
+        $this->form_validation->set_rules('nama_lengkap', 'Nama', 'required|trim');
+        $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
+        $this->form_validation->set_rules('role', 'Role', 'required|trim');
+
+        if ($this->form_validation->run() == FALSE) {
             $data['title'] = "Tambah User";
             $this->template->load('template', 'user/add', $data);
         } else {
             $input = $this->input->post(null, true);
+
             $input_data = [
-                'nama_lengkap'          => $input['nama'],
+                'nama_lengkap'  => $input['nama'],
                 'username'      => $input['username'],
                 'email'         => $input['email'],
                 'no_telp'       => $input['no_telp'],
@@ -65,10 +103,6 @@ class User extends CI_Controller
                 'foto'          => 'user.png'
             ];
 
-            $input_categori = [
-                'nama_categori' => $input['Uang Masuk'],
-                'username'      => $input['username'],
-            ];
 
             if ($this->base_model->insert('user', $input_data)) {
                 set_pesan('data berhasil disimpan.');
@@ -92,7 +126,7 @@ class User extends CI_Controller
         } else {
             $input = $this->input->post(null, true);
             $input_data = [
-                'nama_lengkap'          => $input['nama'],
+                'nama_lengkap'  => $input['nama'],
                 'username'      => $input['username'],
                 'email'         => $input['email'],
                 'no_telp'       => $input['no_telp'],

@@ -150,32 +150,12 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class=" nav-item"><a href="#"><i class="feather icon-list"></i><span class="menu-title" data-i18n="Data List">Main Menu</span></a>
-                    <ul class="menu-content">
-                        <li <?= $this->uri->segment(1) == 'slide' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/slide') ?>"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List View">Content slide</span></a>
-                        </li>
-                        <li <?= $this->uri->segment(1) == 'as' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="data-thumb-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Thumb View">Thumb View</span></a>
-                        </li>
-                    </ul>
-                </li> -->
-                <!-- <li <?= $this->uri->segment(1) == 'barang' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/barang') ?>"><i class="feather icon-x-circle"></i><span class="menu-title" data-i18n="Tanggungan">Barang</span></a>
-                </li>
-                <li <?= $this->uri->segment(1) == 'Partner' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/Partner') ?>"><i class="feather icon-x-circle"></i><span class="menu-title" data-i18n="Tanggungan">Partner</span></a>
-                </li>
-                <li <?= $this->uri->segment(1) == 'peminjaman' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/peminjaman') ?>"><i class="feather icon-x-circle"></i><span class="menu-title" data-i18n="peminjaman">Peminjaman barang</span></a>
-                </li> -->
-                <!-- <li class=" navigation-header"><span>Kelola Blog</span>
-                </li>
-                <li <?= $this->uri->segment(1) == 'categori' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/categori') ?>"><i class="feather icon-save"></i><span class="menu-title" data-i18n="Laporan">Categori</span></a>
-                </li>
-                <li <?= $this->uri->segment(1) == 'laporan' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/laporan') ?>"><i class="feather icon-save"></i><span class="menu-title" data-i18n="Laporan">Laporan</span></a>
-                </li>
                 <?php if (is_admin()) { ?>
                     <li class=" navigation-header"><span>User Management</span>
                     </li>
                     <li <?= $this->uri->segment(1) == 'user' || $this->uri->segment(1) == '' ? 'class="active nav-item"' : '' ?>><a href="<?= site_url('admin/user') ?>"><i class="feather icon-users"></i><span class="menu-title" data-i18n="User Management">User Management</span></a>
                     </li>
-                <?php } ?> -->
+                <?php } ?>\
 
             </ul>
         </div>
