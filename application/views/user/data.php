@@ -44,7 +44,7 @@
                                                 <td><?= $data['role']; ?></td>
                                                 <td>
                                                     
-                                                    <a href="<?= base_url('admin/user/edit/') . $data['id_user'] ?>" class="btn btn-circle btn-sm btn-warning"><i class="fa fa-fw fa-edit"></i></a>
+                                                    <!-- <a href="<?= base_url('admin/user/edit/') . $data['id_user'] ?>" class="btn btn-circle btn-sm btn-warning"><i class="fa fa-fw fa-edit"></i></a> -->
                                                     <a onclick="return confirm('Yakin ingin menghapus data?')" href="<?= base_url('admin/user/delete/') . $data['id_user'] ?>" class="btn btn-circle btn-sm btn-danger"><i class="fa fa-fw fa-trash"></i></a>
                                                 </td>
                                             </tr>
