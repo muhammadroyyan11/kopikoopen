@@ -185,9 +185,8 @@ class User extends CI_Controller
 
     public function toggle($getId)
     {
-        // $id = encode_php_tags($getId);
         $status = $this->base_model->getUser('user', ['id_user' => $getId])['is_active'];
-        $toggle = $status ? 0 : 1; //Jika user aktif maka nonaktifkan, begitu pula sebaliknya
+        $toggle = $status ? 0 : 1;
         $pesan = $toggle ? 'user diaktifkan.' : 'user dinonaktifkan.';
 
         if ($this->base_model->update('user', 'id_user', $getId, ['is_active' => $toggle])) {
