@@ -63,7 +63,8 @@ class User extends CI_Controller
             'role'          => $input['role'],
             'password'      => password_hash($input['password'], PASSWORD_DEFAULT),
             'created_at'    => time(),
-            'foto'          => 'user.png'
+            'foto'          => 'user.png',
+            'is_active'     => 1
         ];
 
 
